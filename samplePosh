@@ -2,6 +2,7 @@ Param(
 [string]$sauceUserName,
 [string]$sauceAccessKey
 )
+Write-Host "The code below take variables passed in from Azure DevOps and send them into the Powershell script."
 Write-Host "sauce.userName that was passed in from Azure DevOps=>$sauceUserName"
 Write-Host "sauce.accessKey that was passed in from Azure DevOps=>$sauceAccessKey"
 
