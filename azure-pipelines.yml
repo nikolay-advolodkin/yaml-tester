@@ -14,3 +14,7 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+- powershell: Write-Host "I will display this variable from Azure Pipelines system.teamProject=>" $env:SYSTEM_TEAMPROJECT
+- powershell: ./setEnvironmentVariables.ps1 $env:SAUCE_USERNAME
+  displayName: 'PowerShell Script'
